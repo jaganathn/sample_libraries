@@ -30,3 +30,8 @@ Route::get('/m/user/add_user', 'services\mobile\user@add_user');
 Route::get('/m/user/search_user', 'services\mobile\user@search_user');
 Route::get('/m/user/edit_user', 'services\mobile\user@edit_user');
 Route::get('/m/user/update_user', 'services\mobile\user@update_user');
+
+// Saravana api example for price calculation
+// routing based on the url to mobile controller or web controller
+Route::get('/mprice', 'MobileController@calculatePrice');
+Route::get('/wprice', 'WebController@calculatePrice');
